@@ -3,11 +3,7 @@
     Signup
 </h1>
 
-<div class="container small-container">
-  <div class="alert alert-denger">
-    <%= flash[:error] %>
-   </div>
- </div>
+<% render "partials/error_flash" %>
 <%= form_for @user do |f| %>
 	<div class="container well margin-top-20 small-container">
 		<div class="bold margin-top-20">
